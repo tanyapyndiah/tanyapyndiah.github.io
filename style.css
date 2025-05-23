@@ -1,0 +1,891 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* ********************************* GENERAL ************************************ */
+
+.coloured-text{
+    color: #FF5D00;
+}
+
+.main-text{
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* ****************************** NAVIGATION BAR ******************************** */
+
+.nav-bar{
+    position: sticky;
+    background-color: #D9D9D9;
+    border: black solid 2px;
+    font-family: "Anton",sans-serif;
+}
+
+.nav-link{
+    color: black !important;
+    text-decoration: none;
+    font-size: 1.5rem !important;
+    text-decoration: underline !important;
+    text-decoration-color: transparent !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover{
+    color: #FF5D00 !important;
+    text-decoration-color: black !important;
+}
+
+.nav-design{
+    height: 60%;
+    width: 10%;
+    margin-bottom: 0.5vh;
+} 
+
+.nav-btns{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Anton",sans-serif;
+    font-weight: 100;
+    font-size: 110%;
+    height: 5vh;
+}
+
+/* ********************************* WELCOME PAGE *********************************** */
+
+.welcome-container{
+    background-color: #EAEAEA;
+    border: solid black 2px;
+    border-top: none;
+    height: 80vh;
+    padding-left: 5vw;
+    font-family: "Anton", sans-serif;
+    padding-top: 5vh;
+}
+
+.welcome-text-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: end;
+    margin-left: 15%;
+}
+
+.medium-title-welcome{
+    font-size: 10vw;
+}
+
+.welcome-text{
+    font-family: "Anton", sans-serif;
+    font-size: 20vw;
+    width: 55%;
+    height: 100%;
+    line-height: 14vh;
+    color: black;
+}
+
+.char-welcome{
+    height: auto;
+    width: 20vw;
+    margin-left: -8%;
+}
+
+@media (min-width: 768px) {
+    .welcome-container{
+        background-color: #EAEAEA;
+        border: solid black 2px;
+        border-top: none;
+        height: 80vh;
+        padding-left: 5vw;
+        font-family: "Anton", sans-serif;
+        padding-top: 5vh;
+    }
+
+    .welcome-text-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        align-items: end;
+        margin-left: 15%;
+    }
+
+    .medium-title-welcome{
+        font-size: 8vw;
+    }
+
+    .welcome-text{
+        font-family: "Anton", sans-serif;
+        font-size: 12vw;
+        width: 55%;
+        height: 100%;
+        line-height: 14vh;
+        color: black;
+    }
+
+    .char-welcome{
+        height: auto;
+        width: 15vw;
+        margin-left: -30%;
+    }
+}
+
+@media (min-width: 992px) {
+    .welcome-container{
+        background-color: #EAEAEA;
+        border: solid black 2px;
+        border-top: none;
+        height: 80vh;
+        padding-left: 5vw;
+        font-family: "Anton", sans-serif;
+        padding-top: 5vh;
+    }
+
+    .welcome-text-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        align-items: end;
+        margin-left: 15%;
+    }
+
+    .medium-title-welcome{
+        font-size: 5vw;
+    }
+
+    .welcome-text{
+        font-family: "Anton", sans-serif;
+        font-size: 8vw;
+        width: 55%;
+        height: 100%;
+        line-height: 14vh;
+        color: black;
+    }
+
+    .char-welcome{
+        height: auto;
+        width: 12vw;
+        margin-left: -15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .welcome-container{
+        background-color: #EAEAEA;
+        border: solid black 2px;
+        border-top: none;
+        height: 80vh;
+        padding-left: 5vw;
+        font-family: "Anton", sans-serif;
+        padding-top: 5vh;
+    }
+
+    .welcome-text-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        align-items: end;
+        margin-left: 15%;
+    }
+
+    .medium-title-welcome{
+        font-size: 5vw;
+    }
+
+    .welcome-text{
+        font-family: "Anton", sans-serif;
+        font-size: 8vw;
+        width: 55%;
+        height: 100%;
+        line-height: 14vh;
+        color: black;
+    }
+
+    .char-welcome{
+        height: auto;
+        width: 12vw;
+        margin-left: -17%;
+    }
+}
+
+/* ********************************* ABOUT ME PAGE *********************************** */
+
+.about-me-page-container{
+    border: black solid 2px;
+    border-top: none;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    color: black
+}
+
+
+.how-i-work-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 8vw;
+    align-self: flex-end;
+    margin-right: 5%;
+}
+
+.how-i-work-text{
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.about-me-title{
+    font-family: 'Anton',sans-serif;
+    font-size: 8vw;
+    margin-top: 10%;
+}
+
+.about-me-text{
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    width: 80%;
+    text-align: right;
+}
+
+.about-me-char{
+    height: 10vh;
+}
+
+.About-me-container {
+    width: 100%;              /* Let Bootstrap handle layout */
+    height: auto;             /* Let it grow based on content */
+    margin: 2rem 0;
+    padding-top: 8vw;
+    padding: 1.5rem;
+    background-image: url(./Assets/about-me-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15%;
+}
+
+.How-i-work-container {
+    width: 100%;              /* Let Bootstrap handle layout */
+    height: auto;             /* Let it grow based on content */
+    margin: 2rem 0;
+    padding-top: 8vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+    background-image: url(./Assets/how-i-work-bg.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35%;
+}
+
+@media (min-width: 768px) {
+    .about-me-page-container{
+        border: black solid 2px;
+        border-top: none;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+        color: black
+    }
+
+
+    .how-i-work-title{
+        font-family: 'Anton', sans-serif;
+        font-size: 8vw;
+        align-self: flex-end;
+        margin-right: 5%;
+    }
+
+    .how-i-work-text{
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .about-me-title{
+        font-family: 'Anton',sans-serif;
+        font-size: 8vw;
+        margin-top: 10%;
+    }
+
+    .about-me-text{
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        width: 80%;
+        text-align: right;
+    }
+
+    .about-me-char{
+        height: 10vh;
+    }
+
+    .About-me-container {
+        width: 100%;              /* Let Bootstrap handle layout */
+        height: auto;             /* Let it grow based on content */
+        margin: 2rem 0;
+        padding-top: 8vw;
+        padding: 1.5rem;
+        background-image: url(./Assets/about-me-bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -15%;
+    }
+
+    .How-i-work-container {
+        width: 100%;              /* Let Bootstrap handle layout */
+        height: auto;             /* Let it grow based on content */
+        margin: 2rem 0;
+        padding-top: 8vw;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 1.5rem;
+        background-image: url(./Assets/how-i-work-bg.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10%;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-me-page-container{
+    border: black solid 2px;
+    border-top: none;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    color: black
+    }
+
+    .About-me-container{
+        position: relative;
+        background-image: url(./Assets/about-me-bg.png);
+        min-height: 90vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 55vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-end;
+        padding-right: 4vh;
+        margin-left: -25%;
+        z-index: 0;
+        margin-top: -45%;
+    }
+
+
+    .How-i-work-container{
+        background-image: url(./Assets/how-i-work-bg.png);
+        height: 80vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        margin-left: 10%;
+        margin-top: -20%;
+    }
+
+    .how-i-work-title{
+        font-family: 'Anton', sans-serif;
+        font-size: 8vw;
+        align-self: flex-end;
+        margin-right: 5%;
+    }
+
+    .how-i-work-text{
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        width: 40vw;
+        margin-left: 5%;
+    }
+
+    .about-me-title{
+        font-family: 'Anton',sans-serif;
+        font-size: 8vw;
+        margin-top: 10vh;
+        z-index: 2;
+    }
+
+    .about-me-text{
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        width: 30vw;
+        text-align: right;
+    }
+
+    .about-me-char{
+        height: 10vh;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .about-me-page-container{
+    border: black solid 2px;
+    border-top: none;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    color: black
+    }
+
+    .About-me-container{
+        position: relative;
+        background-image: url(./Assets/about-me-bg.png);
+        min-height: 90vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 55vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-end;
+        padding-right: 4vh;
+        margin-left: -30%;
+        z-index: 0;
+        margin-top: -45%;
+    }
+
+
+    .How-i-work-container{
+        background-image: url(./Assets/how-i-work-bg.png);
+        height: 80vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        margin-left: 10%;
+        margin-top: -20%;
+    }
+
+    .how-i-work-title{
+        font-family: 'Anton', sans-serif;
+        font-size: 8vw;
+        align-self: flex-end;
+        margin-right: 5%;
+    }
+
+    .how-i-work-text{
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        width: 40vw;
+        margin-left: 5%;
+    }
+
+    .about-me-title{
+        font-family: 'Anton',sans-serif;
+        font-size: 8vw;
+        margin-top: 10vh;
+        z-index: 2;
+    }
+
+    .about-me-text{
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        width: 30vw;
+        text-align: right;
+    }
+
+    .about-me-char{
+        height: 10vh;
+    }
+
+}
+
+
+/* ********************************* MY RPOJECTS *********************************** */
+
+.project-grid-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.char-projects{
+    display: none;
+}
+
+.my-projects-container{
+    background-color: #EAEAEA;
+    border: solid black 2px;
+    border-top: none;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+.my-projects-title{
+    font-family: 'Anton',sans-serif;
+    font-size: 10vw;
+    color: black;
+    margin-top: -10%;
+    margin-bottom: 10%;
+}
+
+.project-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project{
+    background-image: url(./Assets/project-bg.png);
+    min-height: 40vh;
+    height: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 10%;
+    z-index: 1;
+    transition: ease-in 0.1s;
+}
+
+.project:hover{
+    transform: scale(1.02);
+}
+
+.project:hover .project-title{
+    color: #FF5D00;
+    text-decoration-color: black;
+}
+
+.project-text{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 10%;
+}
+
+.project-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 4vw;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.3s ease, color 0.3s ease;
+}
+
+.project-img{
+    max-height: 85%;
+    height: auto;
+    width: 70%;
+    object-fit: contain;
+}
+
+
+@media (min-width: 992px) {
+
+    .char-projects{
+        position: absolute;
+        align-self: flex-end;
+        margin-top: -20%;
+        height: 90vh;
+        margin-right: -5%;
+        z-index: 0;
+        display: block;
+    }
+
+    .my-projects-title{
+        font-family: 'Anton',sans-serif;
+        font-size: 8vw;
+        color: black;
+        margin-top: -10%;
+        margin-bottom: 10%;
+    }
+
+    .my-projects-container{
+        background-color: #EAEAEA;
+        border: solid black 2px;
+        border-top: none;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .project{
+        background-image: url(./Assets/project-bg.png);
+        min-height: 40vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10%;
+        padding: 5%;
+    }
+
+    .project-link-odd{
+        margin-left: -30%;
+    }
+
+    .project-link-even{
+        margin-right: -30%;
+    }
+
+    .project-img{
+        width: auto;
+    }
+}
+
+@media (min-width: 1350px) {
+
+    .char-projects{
+        position: absolute;
+        align-self: flex-end;
+        margin-top: -20%;
+        height: 90vh;
+        margin-right: 5%;
+        z-index: 0;
+        display: block;
+    }
+
+    .my-projects-container{
+        background-color: #EAEAEA;
+        border: solid black 2px;
+        border-top: none;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .project{
+        background-image: url(./Assets/project-bg.png);
+        min-height: 40vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 40vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10%;
+        padding: 5%;
+    }
+
+    .project-link-odd{
+        margin-left: -30%;
+    }
+
+    .project-link-even{
+        margin-right: -30%;
+    }
+
+    .project-img{
+        width: auto;
+    }
+}
+
+
+/* ********************************* CONTACT ME *********************************** */
+
+.contact-me-page-container{
+    background-color: white;
+    border: solid black 2px;
+    border-top: none;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.email-container{
+    background-image: url(./Assets/contact-me-bg.png);
+    min-height: 72vh;
+    height: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    align-items: end;
+    margin-top: 20%;
+}
+
+.contact-me-title{
+    font-family: 'Anton',sans-serif;
+    font-size: 8vw;
+    margin-top: -8%;
+    margin-left: 3%;
+}
+
+.char-contact-me{
+    position: absolute;
+    align-self: center;
+    justify-self:  right;
+    height: 85vh;
+    width: auto;
+    object-fit: contain;
+    bottom: 0;
+    right: 10;
+    display: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+    font-family: 'Anton',sans-serif;
+    font-size: 3.5vw;
+    margin-right: 1vw;
+}
+
+.form-entry{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.message-entry-container{
+    flex-direction: column;
+}
+
+#Name,
+#Email{
+    width: 50vw;
+    height: 6vh;
+}
+
+#Message{
+    width: 70vw;
+    height: 25vh;
+}
+
+.submit-btn{
+    width: 20%;
+    height: 2.5rem;
+    margin-left: 80%;
+    font-family: 'Anton',sans-serif;
+    color: white;
+    background-color: black;
+    transition: ease-in 0.2s;
+}
+
+.submit-btn:hover{
+    color: black;
+    background-color: #FF5D00;
+    transform: scale(1.02);
+}
+
+
+
+@media (min-width: 768px) {
+
+    #Message{
+        width: 70vw;
+        height: 20vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-me-page-container{
+        height: 115vh;
+    }
+
+    .email-container{
+        min-height: 72vh;
+        height: auto;
+        width: 90vw;
+        padding: 5%;
+        padding-top: 8%;
+        padding-bottom: 1%;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .contact-me-title{
+        font-family: 'Anton',sans-serif;
+        font-size: 8vw;
+        margin-top: -8%;
+        margin-left: 3%;
+    }
+
+    .char-contact-me{
+        position: absolute;
+        align-self: center;
+        justify-self:  right;
+        height: 85vh;
+        width: auto;
+        object-fit: contain;
+        bottom: 0;
+        right: 10;
+        display: block;
+    }
+    
+    .form-label{
+        font-size: 3vw;
+        margin-right: 1vw;
+    }
+
+    #Name,
+    #Email{
+        width: 50vw;
+        height: 6vh;
+    }
+
+    #Message{
+        width: 70vw;
+        height: 12vh;
+    }
+}
