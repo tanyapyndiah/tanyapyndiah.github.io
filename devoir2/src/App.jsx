@@ -8,12 +8,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {
 
   return (
-    
+    <>
     <BrowserRouter basename='/Autorepair_site'>
         <Routes>
           <Route path="/" element={<MainPage />}/>
         </Routes>
     </BrowserRouter>
+    </>
     
   )
 }
