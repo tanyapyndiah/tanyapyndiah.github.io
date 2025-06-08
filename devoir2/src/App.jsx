@@ -9,7 +9,7 @@ function App() {
 
   return (
     
-    <BrowserRouter>
+    <BrowserRouter basename='/Autorepair_site'>
         <Routes>
           <Route path="/" element={<MainPage />}/>
         </Routes>
