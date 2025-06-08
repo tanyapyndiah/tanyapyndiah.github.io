@@ -1,0 +1,90 @@
+.git-cont {
+    height: 100vh;
+    width: 45vw;
+    padding-left: 4rem;
+    font-family: "Helvetica Neue", sans-serif;
+    z-index: 3;
+    padding-top: 4rem;
+}
+
+.git-text {
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    letter-spacing: -0.2rem;
+    line-height: 0.8;
+    background: linear-gradient(to bottom, white, #999999 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.info-label {
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.info-field {
+    background-color: white;
+    height: 5vh;
+    width: 60%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.git-email {
+    width: 60%;
+    text-align: end;
+}
+
+.git-info {
+    margin: 0;
+    padding-left: 0.5rem;
+}
+
+.git-info-email {
+    width: 100%;
+    text-align: end;
+    padding-right: 0.5rem;
+}
+
+.email-link {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.git-info-email:hover {
+    color: #ff2800;
+}
+
+@media (max-width: 1199px) {
+    .info-field {
+        width: 80%;
+    }
+
+    .git-email {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .git-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    .info-field {
+        width: 100%;
+    }
+
+    .git-email {
+        width: 100%;
+    }
+}

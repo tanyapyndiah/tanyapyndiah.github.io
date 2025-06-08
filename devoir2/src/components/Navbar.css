@@ -1,0 +1,42 @@
+.nav-bar{
+    position: sticky;
+    background-color: black;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: 200;
+    height: 7vh;
+    border-bottom: 1px solid #527F8E;
+}
+
+.navbar{
+    height: 7vh;
+}
+
+.nav-bar-cont{
+    z-index: 999;
+}
+
+.nav-link{
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.5rem !important;
+    text-decoration: underline !important;
+    text-decoration-color: transparent !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover{
+    color: #ff2800 !important;
+}
+
+.myNav {
+    gap: 2rem;
+}
+
+.navbar-collapse{
+    background-color: black;
+    padding-left: 1rem;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); 
+}

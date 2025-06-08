@@ -1,0 +1,39 @@
+.grid {
+    width: 65vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.grid-cust-text {
+    display: none;
+    height: max-content;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: -0.1rem;
+    font-size: 3rem;
+    line-height: 0.8;
+    background: linear-gradient(to right, white, #999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+    .grid .row {
+        width: 80vw;
+    }
+
+    .grid {
+        gap: 6rem;
+    }
+
+    .grid-cust-text {
+        display: block;
+        
+    }
+}

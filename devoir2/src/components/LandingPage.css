@@ -1,0 +1,105 @@
+.landing-page-cont {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to bottom, #D4DFE3, #94A2A4); 
+    padding-top: 10vh;
+}
+
+/* .pitstop-title {
+    height: 15vh;
+    margin-top: 18rem;
+    transform: scaleY(700%);
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(to bottom, black, #666666); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+.row-text{
+    margin-bottom: 10vh;
+}
+
+.row-cont {
+    height: fit-content;
+    margin-bottom: -20vh;
+}
+
+.car1-cont {
+    display: flex;
+    justify-content: center;
+}
+.car1-img {
+    position: relative;
+    z-index: 2;
+    width: 55vw;
+}
+
+.pitstop-desc-text {
+    margin-bottom: -13vh;
+    align-self: flex-end;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.landing-page-text {
+    display: flex;
+    justify-content: center;
+}
+
+
+.pitstop-title {
+  transform: scaleY(700%);
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+}
+
+/* 
+.pitstop-title {
+  height: 15vh;
+  margin-top: 12rem;
+  transform: scaleY(700%);
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+} */
+
+
+.pitstop-title-gradient {
+  color: transparent;
+  background: linear-gradient(to bottom, black, #666666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red-text {
+  background: linear-gradient(to bottom, #ff2800, rgb(152, 74, 74)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 992px) {
+
+    .car1-img {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .car1-img {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .car1-img {
+        width: 90vw;
+    }
+}

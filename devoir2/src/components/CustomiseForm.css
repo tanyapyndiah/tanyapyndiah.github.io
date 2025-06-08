@@ -1,0 +1,86 @@
+.cust-cont {
+
+    height: 100vh;
+    width: fit-content;
+    font-family: "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    z-index: 3;
+}
+
+.form-cust-cont{
+    width: 100%;
+}
+
+.cust-text {
+    height: max-content;
+    font-size: 5rem;
+    letter-spacing: -0.2rem;
+    line-height: 0.8;
+    background: linear-gradient(to right, white, #999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    padding-bottom: 1rem;
+    text-align: right;
+}
+
+.cust-field-cont {
+    width: 100%;
+}
+
+.cust-field {
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    font-family: "Helvetica Neue", sans-serif;
+    padding-inline: 1rem;
+    appearance: auto;
+    border: none;
+    border-radius: 0;
+}
+
+#cust-name::placeholder, #cust-email::placeholder, #cust-car-model::placeholder {
+    color: black;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+}
+
+.cust-input-label {
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+    text-align: right;
+}
+
+.customise-btn {
+    margin-top: 2vh;
+    border-radius: 0;
+    width: 50%;
+    height: 6vh;
+    font-size: 1.2rem;
+    background-color: #ff2800;
+    border: none;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    transition: transform ease-in 0.1s;
+    margin-left: 50%;
+}
+
+.customise-btn:hover {
+    background-color: #ff2800;
+    transform: scale(1.1);
+}
+
+.field-container{
+    margin-bottom: 0 !important;
+}
+
+#cust-date::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}

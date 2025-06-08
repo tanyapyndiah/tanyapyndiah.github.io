@@ -1,0 +1,54 @@
+.cust-page-cont{
+    height: fit-content;
+    background-color: black;
+    overflow: hidden;
+}
+
+.cust-form-cont{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #6B8999, #242E33); 
+}
+
+.cust-grid-cont {
+    background-color: black;
+}
+
+.cust-grid-fields-cont {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cust-lines{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    bottom: 0;
+    margin-bottom: 2rem;
+    margin-top: -9vh;
+}
+
+.cust-blue-line{
+    height: 0.5rem;
+    width: 100vw;
+    background-color: #527F8E;
+}
+
+.cust-red-line{
+    height: 0.5rem;
+    width: 40vw;
+    background-color: red;
+}
+
+@media (max-width: 992px) {
+    .cust-lines {
+        display: none;
+    }
+
+    .cust-grid-cont  {
+        display: flex;
+        justify-content: center;
+    }
+}

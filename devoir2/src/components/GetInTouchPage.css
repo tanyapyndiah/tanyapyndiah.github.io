@@ -1,0 +1,55 @@
+.git-page-cont {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-design {
+    align-self: end;
+    width: max-content;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.car3 {
+    object-fit: contain;
+    width: 45vw;
+    align-self: flex-end;
+    z-index: 2;
+}
+
+.git-line {
+    background-color: #527F8E;
+    width: 2vw;
+    height: 100vh;
+    margin-left: -12vw;
+    z-index: 1;
+}
+
+.circle {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-color: #ff2800;
+    margin-bottom: 5vh;
+}
+
+.line-circle {
+    display: flex;
+    align-items: end;
+    margin-right: -10vw;
+}
+
+@media (max-width: 768px) {
+    .car-design{
+        display: none;
+    }
+
+    .git-page-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

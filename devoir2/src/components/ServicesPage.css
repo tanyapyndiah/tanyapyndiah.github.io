@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+}
+
+.services-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.car4 {
+    height: 100vh;
+}
+
+.services-cont {
+    padding-right: 5vw;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.our-services-title {
+    height: max-content;
+    font-size: 5rem;
+    letter-spacing: -0.2rem;
+    background: linear-gradient(to right, #ff2800, #a11c05 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    padding-bottom: 1rem;
+    align-self: flex-end;
+}
+
+.services-text-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-title {
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.services-book-btn {
+    text-decoration: none;
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    background-color: #ff2800;
+    padding-inline: 4vw;
+    height: 20%;
+    transition: transform ease-in 0.1s;
+}
+.repairs-services-cont, .customize-services-cont{
+    width: 100%;
+}
+
+.rep-services-text, .cust-services-text {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.5;
+}
+
+.cust-services-text {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-book-btn:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1199px) {
+    .services-cont {
+        width: 55vw;
+    }
+}
+
+@media (max-width: 960px) {
+    .car4 {
+        display: none;
+    }
+
+    .services-cont {
+        width: 60%;
+        padding-right: 0;
+    }
+
+    .services-page {
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .our-services-title {
+        align-self: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .services-cont {
+        width: 80%;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .services-cont {
+        width: 90%;
+        padding-right: 0;
+    }
+}

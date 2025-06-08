@@ -1,0 +1,138 @@
+.booking-cont {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4); 
+    /* background-color: rgba(255,0,0, 0.1); */
+    backdrop-filter: blur(20px);          
+    -webkit-backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 45vw;
+    padding-left: 4rem;
+    font-family: "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+}
+
+.booking-text {
+    height: max-content;
+    font-size: 5rem;
+    letter-spacing: -0.2rem;
+    line-height: 0.8;
+    background: linear-gradient(to right, black, white );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    padding-bottom: 1rem;
+}
+
+.field-cont {
+    margin-bottom: 3rem;
+}
+
+.field {
+    height: 3rem;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    font-family: "Helvetica Neue", sans-serif;
+    padding-inline: 1rem;
+    appearance: auto;
+    border: none;
+    border-radius: 0;
+}
+
+.field:focus {
+    background-color: black !important;
+    color: white !important;
+}
+
+#name::placeholder, #email::placeholder {
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+}
+
+#date::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* makes it white if the base icon is black */
+  cursor: pointer;
+}
+
+#name {
+    width: 65%;
+}
+
+#email {
+    width: 55%;
+}
+
+#date {
+    width: 60%;
+}
+
+#service{
+    width: 70%;
+    appearance: none;
+}
+
+.input-label {
+    font-size: 2rem;
+    color: black;
+    font-weight: 300;
+}
+
+@media (max-width: 1199px) {
+    #name {
+    width: 80%;
+}
+
+#email {
+    width: 70%;
+}
+
+#date {
+    width: 75%;
+}
+
+#service{
+    width: 85%;
+}
+
+}
+
+@media (max-width: 992px) {
+    .booking-cont {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .booking-cont{
+        width: 100vw;
+        backdrop-filter: blur(10px);          
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    #name, #email, #date, #service  {
+    width: 90%;
+    }
+}
+
+.repair-btn {
+    margin-top: 2vh;
+    border-radius: 0;
+    width: 20%;
+    height: 6vh;
+    font-size: 1.2rem;
+    background-color: #ff2800;
+    border: none;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    transition: transform ease-in 0.1s;
+}
+
+.repair-btn:hover {
+    background-color: #ff2800;
+    transform: scale(1.1);
+}
+
