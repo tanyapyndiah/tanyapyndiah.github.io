@@ -1,6 +1,7 @@
 {
   "name": "devoir2",
   "private": true,
+  "homepage": "https://tanyapyndiah.github.io/Autorepair_site",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
